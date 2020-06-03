@@ -23,8 +23,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline-themes'
     " Fugitive Git
     Plug 'tpope/vim-fugitive'
-    " Autocomplete tool
-    Plug 'ycm-core/YouCompleteMe'
-    
+    " Flake8 linter 
+    Plug 'nvie/vim-flake8'
+    " Auto Complete COC
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " Fuzzy finder
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+    " HTML, SCSS
+    Plug 'mattn/emmet-vim'
 
-call plug#end()
+    call plug#end()
