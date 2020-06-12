@@ -1,5 +1,6 @@
 " set leader key
 let g:mapleader = "\<Space>"
+let g:python3_host_prog = '/home/joaof/.local/share/virtualenvs/neovim-06Scymja/bin/python3'
 
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
@@ -21,7 +22,7 @@ set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
 set laststatus=0                        " Always display the status line
-set number                              " Line numbers
+set number relativenumber                              " Line numbers
 set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
 set showtabline=2                       " Always show tabs
@@ -34,7 +35,6 @@ set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set noswapfile
 "set autochdir                           " Your working directory will always be the same as your working directory
-
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
 " You can't stop me
