@@ -1,6 +1,12 @@
 " set leader key
 let g:mapleader = "\<Space>"
 
+let g:python3_host_prog = '/home/joaofranca/.local/share/virtualenvs/neovim-wBsNdngz/bin/python3'
+
+let g:user_emmet_leader_key='<C-Z>'
+let NERDTreeShowHidden=1
+let g:NERDTreeWinSize=20
+
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set encoding=utf-8                      " The encoding displayed
@@ -21,9 +27,9 @@ set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
 set laststatus=0                        " Always display the status line
-set number                              " Line numbers
+set number relativenumber                      " Line numbers
 set cursorline                          " Enable highlighting of the current line
-set background=dark                     " tell vim what the background color looks like
+set background=dark                   " tell vim what the background color looks like
 set showtabline=2                       " Always show tabs
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
 set nobackup                            " This is recommended by coc
@@ -39,14 +45,17 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 
 " You can't stop me
 cmap w!! w !sudo tee %
-
+let g:gruvbox_contrast_dark='hard'
 colorscheme gruvbox
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
 nnoremap <C-p> :FZF<CR>
 
 
-let g:user_emmet_leader_key='<C-Z>'
+let g:float_preview#docked = 0
+let g:float_preview#max_width = 80
+let g:float_preview#max_height = 40
 
-let NERDTreeShowHidden=1
-let g:NERDTreeWinSize=20
+let g:ale_linters = {
+      \ 'clojure': ['clj-kondo', 'joker']
+      \}

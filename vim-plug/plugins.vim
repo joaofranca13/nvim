@@ -32,5 +32,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf.vim'
     " HTML, SCSS
     Plug 'mattn/emmet-vim'
-
+    " Clojure float-preview
+    Plug 'ncm2/float-preview.nvim'
+    " Evaluate Code
+    Plug 'w0rp/ale'
+    " Conjure
+    Plug 'Olical/conjure', { 'tag': 'v4.0.0' }
+    " Clojure Autocompletion
+    Plug 'clojure-vim/async-clj-omni'
     call plug#end()
