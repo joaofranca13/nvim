@@ -8,6 +8,12 @@ verify_ssl = true
 [packages]
 pynvim = "*"
 jedi = "*"
+django = "*"
+djangorestframework = "*"
+flake8 = "*"
+autopep8 = "*"
+pep8 = "*"
+npm = "*"
 
 [requires]
 python_version = "3.8"
