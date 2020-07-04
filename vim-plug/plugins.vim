@@ -2,16 +2,14 @@
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  "autocmd VimEnter * PlugInstall
-  "autocmd VimEnter * PlugInstall | source $MYVIMRC
+  autocmd VimEnter * PlugInstall
+  autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
-    " File Explorer
-    Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
     " Gruvbox theme
@@ -32,6 +30,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf.vim'
     " HTML, SCSS
     Plug 'mattn/emmet-vim'
+<<<<<<< HEAD
     " Clojure float-preview
     Plug 'ncm2/float-preview.nvim'
     " Evaluate Code
@@ -40,4 +39,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'Olical/conjure', { 'tag': 'v4.0.0' }
     " Clojure Autocompletion
     Plug 'clojure-vim/async-clj-omni'
+=======
+    " File Tree
+    Plug 'preservim/nerdtree'
+
+>>>>>>> 3818116403982d8d167d679b2ba30435b376481a
     call plug#end()
