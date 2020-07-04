@@ -52,9 +52,7 @@ let g:float_preview#docked = 0
 let g:float_preview#max_width = 80
 let g:float_preview#max_height = 40
 
-let g:ale_linters = {
-      \ 'clojure': ['clj-kondo', 'joker']
-      \}
+let g:ale_linters = {'clojure': ['clj-kondo']}
 
 let g:user_emmet_leader_key='<C-Z>'
 let NERDTreeShowHidden=1

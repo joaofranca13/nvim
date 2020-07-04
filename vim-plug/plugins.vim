@@ -30,22 +30,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf.vim'
     " HTML, SCSS
     Plug 'mattn/emmet-vim'
-<<<<<<< HEAD
-    " Clojure float-preview
-    Plug 'ncm2/float-preview.nvim'
-    " Evaluate Code
-    Plug 'w0rp/ale'
     " Conjure
     Plug 'Olical/conjure', { 'tag': 'v4.0.0' }
     " Clojure Autocompletion
     Plug 'clojure-vim/async-clj-omni'
-=======
     " File Tree
     Plug 'preservim/nerdtree'
     " Vim Fireplace
     Plug 'tpope/vim-fireplace'
-    " Ayu Theme
-    Plug 'ayu-theme/ayu-vim'
     " Conjure for conversational software development
     Plug 'Olical/conjure', {'tag': 'v4.0.1'}
     " Float Preview Clojure
@@ -53,5 +45,4 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Asynchronous Lint Engine
     Plug 'w0rp/ale'
 
->>>>>>> 3818116403982d8d167d679b2ba30435b376481a
     call plug#end()
