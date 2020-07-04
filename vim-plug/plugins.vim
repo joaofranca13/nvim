@@ -42,6 +42,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 =======
     " File Tree
     Plug 'preservim/nerdtree'
+    " Vim Fireplace
+    Plug 'tpope/vim-fireplace'
+    " Ayu Theme
+    Plug 'ayu-theme/ayu-vim'
+    " Conjure for conversational software development
+    Plug 'Olical/conjure', {'tag': 'v4.0.1'}
+    " Float Preview Clojure
+    Plug 'ncm2/float-preview.nvim'
+    " Asynchronous Lint Engine
+    Plug 'w0rp/ale'
 
 >>>>>>> 3818116403982d8d167d679b2ba30435b376481a
     call plug#end()

@@ -16,6 +16,5 @@
   "python.linting.flake8Enabled": true,
   "python.linting.pep8Enabled": true,
   "python.pythonPath": "/home/joaof/.local/share/virtualenvs/neovim-06Scymja/bin/python3",
-
   "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"]
 }

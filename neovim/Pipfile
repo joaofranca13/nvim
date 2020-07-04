@@ -11,6 +11,8 @@ jedi = "*"
 pynvim = "*"
 autopep8 = "*"
 flake8 = "*"
+pep8 = "*"
+npm = "*"
 
 [requires]
 python_version = "3.8"

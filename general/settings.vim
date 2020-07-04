@@ -1,5 +1,6 @@
 " set leader key
 let g:mapleader = "\<Space>"
+let g:python3_host_prog = '/home/joaof/.local/share/virtualenvs/neovim-06Scymja/bin/python3'
 
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
@@ -39,12 +40,13 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 
 " You can't stop me
 cmap w!! w !sudo tee %
-let g:gruvbox_contrast_dark='hard'
-colorscheme gruvbox
+
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
 nnoremap <C-p> :FZF<CR>
 
+let g:gruvbox_contrast_dark='hard'
+colorscheme gruvbox
 
 let g:float_preview#docked = 0
 let g:float_preview#max_width = 80
@@ -53,3 +55,7 @@ let g:float_preview#max_height = 40
 let g:ale_linters = {
       \ 'clojure': ['clj-kondo', 'joker']
       \}
+
+let g:user_emmet_leader_key='<C-Z>'
+let NERDTreeShowHidden=1
+let g:NERDTreeWinSize=20
